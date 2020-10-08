@@ -1,0 +1,13 @@
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.exe
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.deps.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.runtimeconfig.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\bin\Debug\netcoreapp3.1\Holamundo.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Holamundo\obj\Debug\netcoreapp3.1\Holamundo.genruntimeconfig.cache
