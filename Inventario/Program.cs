@@ -4,13 +4,13 @@ namespace inventario
 {
     class Program
     {
-        static string[,] productos = new string[5,4]
+        static string[,] productos = new string[5,5]
         {
-            { "001", "iPhoneX", "0", "0"},
-            { "002", "Laptop Dell", "5", "0" },
-            { "003", "Monitor Samsung", "2", "0" },
-            { "004", "Mouse", "100", "0" },
-            { "005", "Headset", "25","0" },
+            { "001", "iPhoneX", "0", "0", "L"},
+            { "002", "Laptop Dell", "5", "0", "L" },
+            { "003", "Monitor Samsung", "2", "0", "L" },
+            { "004", "Mouse", "100", "0", "L" },
+            { "005", "Headset", "25","0", "L" },
         };
 
         static void listarProductos() {
@@ -22,7 +22,7 @@ namespace inventario
 
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine(productos[i, 0] + " | " + productos[i, 1] + " | " + productos[i, 2] + "|" + productos[i,3]);
+                Console.WriteLine(productos[i, 0] + " | " + productos[i, 1] + " | " + productos[i, 2] + "|" + productos[i,3]+ "|" + productos[i,4]);
             }
 
             Console.ReadLine();
