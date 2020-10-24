@@ -1,0 +1,13 @@
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.exe
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.deps.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.runtimeconfig.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\bin\Debug\netcoreapp3.1\Escuela.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Escuela\obj\Debug\netcoreapp3.1\Escuela.genruntimeconfig.cache
