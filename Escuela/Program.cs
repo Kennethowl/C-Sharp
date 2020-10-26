@@ -14,9 +14,23 @@ namespace Escuela
 
             Alumno alumno3 = new Alumno(1, "Juanes", 034555);
 
+            Lista  alumno4 = new Lista("Alejandra", "Arauz");
+            Lista  alumna5 = new Lista("Maholy", "Broonfield");
+
+            alumno4.inactivarAlumno();
+
             Console.WriteLine(alumno1.Codigo);
             Console.WriteLine(alumno2.Codigo);
             Console.WriteLine(alumno3.Codigo + " " + alumno3.Nombre + " " + alumno3.Carnet);
+            Console.WriteLine(alumno4.nombreCompleto());
+            Console.WriteLine(alumna5.nombreCompleto());
+
+            alumno4.activarAlumno();
+
+            Console.WriteLine("");
+            Console.WriteLine(alumno4.nombreCompleto());
+            Console.WriteLine(alumna5.nombreCompleto());
+
         }
     }
 }

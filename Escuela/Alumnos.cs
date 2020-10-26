@@ -15,11 +15,11 @@ public class Alumno {
        Codigo = codigo;
    }
    
-   
     public Alumno(int codigo, string nombre, int carnet)
     {
         Codigo = codigo;
         Nombre = nombre;
         Carnet = carnet;
+       
     }
 }
