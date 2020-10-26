@@ -120,7 +120,7 @@ public class Inventario
         Console.Write("Ingrese la entrada: ");
         entrada = Console.ReadLine();
 
-        movimientoEntrada(codigo, Int32.Parse(cantidad), float.Parse(entrada), "+");
+        movimientoEntrada(codigo, Int32.Parse(cantidad), Convert.ToSingle(entrada), "+");
     }
 
     public void ajusteNegativo() {
@@ -140,7 +140,7 @@ public class Inventario
         Console.Write("Ingrese la salida: ");
         entrada = Console.ReadLine();
 
-        movimientoEntrada(codigo, Int32.Parse(cantidad), float.Parse(entrada), "-");
+        movimientoEntrada(codigo, Int32.Parse(cantidad), Convert.ToSingle(entrada), "-");
     }
 }
 
