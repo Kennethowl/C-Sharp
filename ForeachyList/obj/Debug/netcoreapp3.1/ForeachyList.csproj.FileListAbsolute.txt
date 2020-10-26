@@ -1,0 +1,13 @@
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.exe
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.deps.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.runtimeconfig.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\bin\Debug\netcoreapp3.1\ForeachyList.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ForeachyList\obj\Debug\netcoreapp3.1\ForeachyList.genruntimeconfig.cache
