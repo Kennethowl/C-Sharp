@@ -8,11 +8,11 @@ public class Inventario
     {
         ListadeProductos = new List<Producto>();
 
-        Producto a = new Producto("001", "iPhoneX", 0, 0);
-        Producto b = new Producto("002", "Dell", 5, 0);
-        Producto c = new Producto("003", "Monitor Samsung", 2, 0);
-        Producto d = new Producto("004", "Mouse", 100, 0);
-        Producto e = new Producto("005", "Headset", 25, 0);
+        Producto a = new Producto("001", "iPhoneX", 0, 0, "Lempiras");
+        Producto b = new Producto("002", "Dell", 5, 0, "Lempiras");
+        Producto c = new Producto("003", "Monitor Samsung", 2, 0, "Lempiras");
+        Producto d = new Producto("004", "Mouse", 100, 0,"Lempiras");
+        Producto e = new Producto("005", "Headset", 25, 0, "Lempiras");
 
         ListadeProductos.Add(a);
         ListadeProductos.Add(b);
@@ -31,7 +31,7 @@ public class Inventario
 
         foreach (var producto in ListadeProductos)
         {
-            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Existencia + " | " + producto.Entrada.ToString());
+            Console.WriteLine(producto.Codigo + " | " + producto.Descripcion + " | " + producto.Existencia + " | " + producto.Entrada + " " + producto.Dinero.ToString());
         }
 
         Console.ReadLine();
