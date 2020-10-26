@@ -27,7 +27,7 @@ namespace ForeachyList
             console.writeline(n);
          }
 
-        List<Alumno> alumnos = new List<Alumno>();
+         List<Alumno> alumnos = new List<Alumno>();
          Alumno a = new Alumno(001, "Marcus");
          Alumno b = new Alumno(002, "Martha");
          Alumno c = new Alumno(003, "Mayra");
