@@ -1,0 +1,13 @@
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.exe
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.deps.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.runtimeconfig.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\bin\Debug\netcoreapp3.1\ordenes.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\ordenes\obj\Debug\netcoreapp3.1\ordenes.genruntimeconfig.cache
