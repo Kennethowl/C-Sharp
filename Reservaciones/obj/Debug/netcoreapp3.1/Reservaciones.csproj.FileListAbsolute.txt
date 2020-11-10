@@ -1,0 +1,13 @@
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.exe
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.deps.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.runtimeconfig.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.runtimeconfig.dev.json
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\bin\Debug\netcoreapp3.1\Reservaciones.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.csprojAssemblyReference.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.AssemblyInfoInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.AssemblyInfo.cs
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.dll
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.pdb
+C:\Users\usuario\Desktop\Lenguaje 2\Lenguaje-de-Programacion-II\C sharp\C-Sharp\Reservaciones\obj\Debug\netcoreapp3.1\Reservaciones.genruntimeconfig.cache

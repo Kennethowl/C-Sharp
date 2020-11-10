@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ForeachyList
 {
-    class Program
+    class foreach 
     {
         static void Main(string[] args)
         {
