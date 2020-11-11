@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 public class Habitaciones
 {
     public int Numero { get; set; }
