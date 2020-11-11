@@ -1,4 +1,8 @@
-public class Clientes{
+using System;
+using System.Collections.Generic;
+
+public class Clientes
+{
     public int Codigo { get; set; }
     public int ID { get; set; }
     public string Nombre { get; set; }
@@ -12,6 +16,6 @@ public class Clientes{
         Nombre = nombre;
         Apellido = apellido;
         Telefono = telefono;
-        
-    }
-}
+    } 
+
+}   
