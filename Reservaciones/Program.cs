@@ -88,7 +88,7 @@ namespace Reservaciones
       MenuedeRestaurante.Add(menu2);
       Servicio menu3 = new Servicio("Baleada con Pollo", 17, "Especial de Papas", 30,  "Cena Cinco Estrellas", 2000);
       MenuedeRestaurante.Add(menu3);
-      Servicio menu4 = new Servicio("Cafe con Budin", 17, "Pizza", 30,  "Cena Bufete", 2000);
+      Servicio menu4 = new Servicio("Cafe con Budin", 10, "Pizza", 99,  "Cena Bufete", 70);
       MenuedeRestaurante.Add(menu4);
   }
 
