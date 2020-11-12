@@ -9,6 +9,8 @@ namespace Reservaciones
 {
     public List<Habitaciones> ListadeHabitaciones { get; set; }
     public List<Servicio> MenuedeRestaurante { get; set; }
+    public List<CrearReserva> CreandoReservas { get; set; }
+   
 
  
  public Reservar()
@@ -125,6 +127,21 @@ public class Servicio
         Saldo3 = saldo3;
     }
 }
+
+public class CrearReserva : Clientes
+{
+    public DateTime Fecha { get; set; }
+
+public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha)
+    {
+        Codigo = codigo;
+        ID = id;
+        Nombre = nombre;
+        Apellido = apellido;
+        Telefono = telefono;
+        Fecha = fecha;
+    }
+}
     class Program
     {
         static void Main(string[] args)
@@ -153,8 +170,7 @@ public class Servicio
                         break;
                     case "2":
                         reserva.menuRestaurante();
-                        break;
-                                                         
+                        break;                          
                     default:
                         break;
                 }
