@@ -131,8 +131,10 @@ public class Servicio
 public class CrearReserva : Clientes
 {
     public DateTime Fecha { get; set; }
+    public Habitaciones Numero { get; set; }
+    public Habitaciones Tipo { get; set; }
 
-public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha)
+public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha, Habitaciones numero, Habitaciones tipo)
     {
         Codigo = codigo;
         ID = id;
@@ -140,6 +142,8 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
         Apellido = apellido;
         Telefono = telefono;
         Fecha = fecha;
+        Numero = numero;
+        Tipo = tipo;
     }
 }
     class Program
