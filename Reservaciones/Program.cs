@@ -8,12 +8,15 @@ namespace Reservaciones
     public class Reservar
 {
     public List<Habitaciones> ListadeHabitaciones { get; set; }
+    public List<Servicio> MenuedeRestaurante { get; set; }
 
  
  public Reservar()
  {
      ListadeHabitaciones = new List<Habitaciones>();
      cargarHabitaciones();
+     MenuedeRestaurante = new List<Servicio>();
+     cargarMenu();
  }
 
  public void cargarHabitaciones(){
@@ -77,6 +80,48 @@ namespace Reservaciones
         }  
         Console.ReadLine();
      }
+
+  public void cargarMenu(){
+      Servicio menu1 = new Servicio("Osmil", 30, "Pollo con Tajadas", 90,  "Caviar", 2000);
+      MenuedeRestaurante.Add(menu1);
+      Servicio menu2 = new Servicio("Baleada sencilla", 14, "Bariloche Burger", 100,  "Cena patagonica", 300);
+      MenuedeRestaurante.Add(menu2);
+      Servicio menu3 = new Servicio("Baleada con Pollo", 17, "Especial de Papas", 30,  "Cena Cinco Estrellas", 2000);
+      MenuedeRestaurante.Add(menu3);
+  }
+
+  public void menuRestaurante(){
+     Console.Clear();
+     Console.WriteLine("Menu Bariloche's Restaurant");
+     Console.WriteLine("************************");
+     Console.WriteLine("Desayuno | Precio | Almuerzo | Precio | Cena | Precio");
+     Console.WriteLine("");
+
+     foreach (var servicio in MenuedeRestaurante)
+        {
+            Console.WriteLine( servicio.Desayuno + " | " + servicio.Saldo1 + " | " + servicio.Almuerzo + " | " + servicio.Saldo2 + " | " + servicio.Cena + " | " + servicio.Saldo3);
+        }  
+        Console.ReadLine();
+     }
+}
+public class Servicio
+{
+    public string Desayuno { get; set; }
+    public double Saldo1 { get; set; }
+    public string Almuerzo { get; set; }
+    public double  Saldo2 { get; set; }
+    public string  Cena { get; set; }
+    public double Saldo3 { get; set; }
+
+    public Servicio(string desayuno, double saldo1, string almuerzo, double saldo2, string cena, double saldo3)
+    {
+        Desayuno = desayuno;
+        Saldo1 = saldo1;
+        Almuerzo = almuerzo;
+        Saldo2 = saldo2;
+        Cena = cena;
+        Saldo3 = saldo3;
+    }
 }
     class Program
     {
@@ -93,8 +138,9 @@ namespace Reservaciones
                 Console.WriteLine("****************");
                 Console.WriteLine("");
                 Console.WriteLine("1 - Habitaciones");
-                Console.WriteLine("2 - Reservar Habitacion");
-                Console.WriteLine("3 - Lista de Habitacines Reservadas");
+                Console.WriteLine("2 - Bariloche's Restaurant");
+                Console.WriteLine("3 - Reservar Habitacion");
+                Console.WriteLine("4 - Lista de Habitacines Reservadas");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
 
@@ -102,6 +148,9 @@ namespace Reservaciones
                 {
                     case "1":
                         reserva.listarHabitaciones();
+                        break;
+                    case "2":
+                        reserva.menuRestaurante();
                         break;
                                                          
                     default:
