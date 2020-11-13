@@ -8,7 +8,8 @@ namespace Reservaciones
     public class Reservar
 {
     public List<Habitaciones> ListadeHabitaciones { get; set; }
-    public List<Servicio> MenuedeRestaurante { get; set; }
+    public List<Restaurante> MenuedeRestaurante { get; set; }
+    public List<Clientela> ListadeClientes { get; set; }
     
 
  
@@ -16,8 +17,10 @@ namespace Reservaciones
  {
      ListadeHabitaciones = new List<Habitaciones>();
      cargarHabitaciones();
-     MenuedeRestaurante = new List<Servicio>();
+     MenuedeRestaurante = new List<Restaurante>();
      cargarMenu();
+     ListadeClientes = new List<Clientela>();
+     cargarClientes();
  }
 
  public void cargarHabitaciones(){
@@ -83,20 +86,20 @@ namespace Reservaciones
      }
 
   public void cargarMenu(){
-      Servicio menu1 = new Servicio("Osmil", 30, "Pollo con Tajadas", 90,  "Caviar", 2000);
+      Restaurante menu1 = new Restaurante("Osmil", 30, "Pollo con Tajadas", 90,  "Caviar", 2000);
       MenuedeRestaurante.Add(menu1);
-      Servicio menu2 = new Servicio("Baleada sencilla", 14, "Bariloche Burger", 100,  "Cena patagonica", 300);
+      Restaurante menu2 = new Restaurante("Baleada sencilla", 14, "Bariloche Burger", 100,  "Cena patagonica", 300);
       MenuedeRestaurante.Add(menu2);
-      Servicio menu3 = new Servicio("Baleada con Pollo", 17, "Especial de Papas", 30,  "Cena Cinco Estrellas", 2000);
+      Restaurante menu3 = new Restaurante("Baleada con Pollo", 17, "Especial de Papas", 30,  "Cena Cinco Estrellas", 2000);
       MenuedeRestaurante.Add(menu3);
-      Servicio menu4 = new Servicio("Cafe con Budin", 10, "Pizza", 99,  "Cena Bufete", 70);
+      Restaurante menu4 = new Restaurante("Cafe con Budin", 10, "Pizza", 99,  "Cena Bufete", 70);
       MenuedeRestaurante.Add(menu4);
   }
 
   public void menuRestaurante(){
      Console.Clear();
      Console.WriteLine("Menu Bariloche's Restaurant");
-     Console.WriteLine("************************");
+     Console.WriteLine("***************************");
      Console.WriteLine("Desayuno | Precio | Almuerzo | Precio | Cena | Precio");
      Console.WriteLine("");
 
@@ -106,18 +109,37 @@ namespace Reservaciones
         }  
         Console.ReadLine();
      }
+   
+    public void cargarClientes(){
+        Clientela c1 = new Clientela(123, 180, "Gisel", "Membreño", 97789612);
+        ListadeClientes.Add(c1);
+        Clientela c2 = new Clientela(456, 181, "Juan", "Carlos", 32562314);
+        ListadeClientes.Add(c2);
+        Clientela c3 = new Clientela(455, 182, "Acsa", "Salazar", 97781214);
+        ListadeClientes.Add(c3);
+        Clientela c4 = new Clientela(457, 183, "Kenneth", "Flores", 33532334);
+        ListadeClientes.Add(c4);
 
-    public void listarReservas(){
+    }
+
+    public void listarClientes(){
      Console.Clear();
-     Console.WriteLine("  Reservaciones Hechas  ");
+     Console.WriteLine("  Lista de Clientes  ");
      Console.WriteLine("************************");
-     Console.WriteLine("Nombre | Apellido | Identidad | Telefono | Fecha | Habitacione | Tipo | Precio");
+     Console.WriteLine(" Codigo | Identidad | Nombre | Apellido | Telefono ");
      Console.WriteLine("");
+     
+     foreach (var cliente in ListadeClientes)
+     {
+         Console.WriteLine(cliente.Codigo + " | " + cliente.ID + " | " + cliente.Nombre + " | " + cliente.Apellido + " | " + cliente.Telefono);
+     }
+     
+     
      Console.ReadLine();
 
     }
 }
-public class Servicio
+public class Restaurante
 {
     public string Desayuno { get; set; }
     public double Saldo1 { get; set; }
@@ -126,7 +148,7 @@ public class Servicio
     public string  Cena { get; set; }
     public double Saldo3 { get; set; }
 
-    public Servicio(string desayuno, double saldo1, string almuerzo, double saldo2, string cena, double saldo3)
+    public Restaurante(string desayuno, double saldo1, string almuerzo, double saldo2, string cena, double saldo3)
     {
         Desayuno = desayuno;
         Saldo1 = saldo1;
@@ -137,26 +159,24 @@ public class Servicio
     }
 }
 
-public class CrearReserva : Clientes
+public class Clientela : Clientes
 {
     public DateTime Fecha { get; set; }
     public Habitaciones Numero { get; set; }
     public Habitaciones Tipo { get; set; }
-    public Habitaciones Precio { get; set; }
+   
 
-public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha, Habitaciones numero, Habitaciones tipo, Habitaciones precio)
+public Clientela(int codigo, int id, string nombre, string apellido, int telefono)
     {
         Codigo = codigo;
         ID = id;
         Nombre = nombre;
         Apellido = apellido;
         Telefono = telefono;
-        Fecha = fecha;
-        Numero = numero;
-        Tipo = tipo;
-        Precio = precio;
+
     }
-}
+    
+} 
     class Program
     {
         static void Main(string[] args)
@@ -173,7 +193,7 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
                 Console.WriteLine("");
                 Console.WriteLine("1 - Habitaciones");
                 Console.WriteLine("2 - Bariloche's Restaurant");
-                Console.WriteLine("3 - Lista de Habitaciones Reservadas");
+                Console.WriteLine("3 - Lista de Clientes");
                 Console.WriteLine("4 - Crear Reserva");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
@@ -187,7 +207,7 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
                         reserva.menuRestaurante();
                         break;
                     case "3":
-                        reserva.listarReservas();
+                        reserva.listarClientes();
                         break;                          
                     default:
                         break;
