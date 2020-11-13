@@ -9,8 +9,7 @@ namespace Reservaciones
 {
     public List<Habitaciones> ListadeHabitaciones { get; set; }
     public List<Servicio> MenuedeRestaurante { get; set; }
-    public List<CrearReserva> CreandoReservas { get; set; }
-   
+    
 
  
  public Reservar()
@@ -107,6 +106,16 @@ namespace Reservaciones
         }  
         Console.ReadLine();
      }
+
+    public void listarReservas(){
+     Console.Clear();
+     Console.WriteLine("  Reservaciones Hechas  ");
+     Console.WriteLine("************************");
+     Console.WriteLine("Nombre | Apellido | Identidad | Telefono | Fecha | Habitacione | Tipo | Precio");
+     Console.WriteLine("");
+     Console.ReadLine();
+
+    }
 }
 public class Servicio
 {
@@ -133,8 +142,9 @@ public class CrearReserva : Clientes
     public DateTime Fecha { get; set; }
     public Habitaciones Numero { get; set; }
     public Habitaciones Tipo { get; set; }
+    public Habitaciones Precio { get; set; }
 
-public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha, Habitaciones numero, Habitaciones tipo)
+public CrearReserva (int codigo, int id, string nombre, string apellido, int telefono, DateTime fecha, Habitaciones numero, Habitaciones tipo, Habitaciones precio)
     {
         Codigo = codigo;
         ID = id;
@@ -144,6 +154,7 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
         Fecha = fecha;
         Numero = numero;
         Tipo = tipo;
+        Precio = precio;
     }
 }
     class Program
@@ -162,8 +173,8 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
                 Console.WriteLine("");
                 Console.WriteLine("1 - Habitaciones");
                 Console.WriteLine("2 - Bariloche's Restaurant");
-                Console.WriteLine("3 - Reservar Habitacion");
-                Console.WriteLine("4 - Lista de Habitacines Reservadas");
+                Console.WriteLine("3 - Lista de Habitaciones Reservadas");
+                Console.WriteLine("4 - Crear Reserva");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
 
@@ -174,6 +185,9 @@ public CrearReserva (int codigo, int id, string nombre, string apellido, int tel
                         break;
                     case "2":
                         reserva.menuRestaurante();
+                        break;
+                    case "3":
+                        reserva.listarReservas();
                         break;                          
                     default:
                         break;
