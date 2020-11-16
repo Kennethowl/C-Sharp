@@ -157,7 +157,7 @@ namespace Reservaciones
             Console.ReadLine();
             return;
         } else {
-            Console.WriteLine("Cliente: " + cliente.Nombre + cliente.Apellido);
+            Console.WriteLine("Cliente: " + cliente.Nombre + " | " + cliente.Apellido);
             Console.WriteLine("");
         }
 
@@ -171,7 +171,7 @@ namespace Reservaciones
             Console.ReadLine();
             return;
         } else {
-            Console.WriteLine("Habitacion: " + habitacion.Piso + habitacion.Tipo + habitacion.Precio);
+            Console.WriteLine("Habitacion: " + " | " + habitacion.Numero + " | "  + habitacion.Piso + " | " + habitacion.Tipo + " | " + habitacion.Precio);
             Console.WriteLine("");
             Console.ReadLine();
         }
