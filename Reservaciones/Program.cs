@@ -10,6 +10,7 @@ namespace Reservaciones
     public List<Habitaciones> ListadeHabitaciones { get; set; }
     public List<Restaurante> MenuedeRestaurante { get; set; }
     public List<Clientela> ListadeClientes { get; set; }
+    public List<CrearReserva> ListadeReservas { get; set; }
     
 
  
@@ -21,52 +22,53 @@ namespace Reservaciones
      cargarMenu();
      ListadeClientes = new List<Clientela>();
      cargarClientes();
+     ListadeReservas = new List<CrearReserva>();
  }
 
  public void cargarHabitaciones(){
-     Habitaciones r1 = new Habitaciones(1, 5, "Sencilla", 600);
+     Habitaciones r1 = new Habitaciones(1, 5, "Sencilla", 600, "1");
      ListadeHabitaciones.Add(r1);
 
-     Habitaciones r2 = new Habitaciones(2, 5, "Doble", 1000);
+     Habitaciones r2 = new Habitaciones(2, 5, "Doble", 1000, "2");
      ListadeHabitaciones.Add(r2);
 
-     Habitaciones r3 = new Habitaciones(3, 5, "Triple", 1500);
+     Habitaciones r3 = new Habitaciones(3, 5, "Triple", 1500, "3");
      ListadeHabitaciones.Add(r3);
 
-     Habitaciones r4 = new Habitaciones(4, 5, "Cuadruple", 2000);
+     Habitaciones r4 = new Habitaciones(4, 5, "Cuadruple", 2000, "4");
      ListadeHabitaciones.Add(r4);
 
-     Habitaciones r5 = new Habitaciones(5, 5, "Suite", 5000);
+     Habitaciones r5 = new Habitaciones(5, 5, "Suite", 5000, "5");
      ListadeHabitaciones.Add(r5);
 
-     Habitaciones r6 = new Habitaciones(6, 4, "Sencilla", 600);
+     Habitaciones r6 = new Habitaciones(6, 4, "Sencilla", 600, "6");
      ListadeHabitaciones.Add(r6);
 
-     Habitaciones r7 = new Habitaciones(7, 4, "Presidencial", 10000);
+     Habitaciones r7 = new Habitaciones(7, 4, "Presidencial", 10000, "7");
      ListadeHabitaciones.Add(r7);
 
-     Habitaciones r8 = new Habitaciones(8, 4, "Doble", 1000);
+     Habitaciones r8 = new Habitaciones(8, 4, "Doble", 1000, "8");
      ListadeHabitaciones.Add(r8);
 
-     Habitaciones r9 = new Habitaciones(9, 4, "Triple", 1500);
+     Habitaciones r9 = new Habitaciones(9, 4, "Triple", 1500, "9");
      ListadeHabitaciones.Add(r9);
 
-     Habitaciones r10 = new Habitaciones(10, 4, "Cuadruple", 2000);
+     Habitaciones r10 = new Habitaciones(10, 4, "Cuadruple", 2000, "10");
      ListadeHabitaciones.Add(r10);
 
-     Habitaciones r11 = new Habitaciones(11, 3, "Triple", 1500);
+     Habitaciones r11 = new Habitaciones(11, 3, "Triple", 1500, "11");
      ListadeHabitaciones.Add(r11);
 
-     Habitaciones r12 = new Habitaciones(12, 3, "Doble", 1000);
+     Habitaciones r12 = new Habitaciones(12, 3, "Doble", 1000, "12");
      ListadeHabitaciones.Add(r12);
 
-     Habitaciones r13 = new Habitaciones(13, 3, "Suite", 5000);
+     Habitaciones r13 = new Habitaciones(13, 3, "Suite", 5000, "13");
      ListadeHabitaciones.Add(r13);
 
-     Habitaciones r14 = new Habitaciones(14, 3, "Sencilla", 600);
+     Habitaciones r14 = new Habitaciones(14, 3, "Sencilla", 600, "14");
      ListadeHabitaciones.Add(r14);
 
-     Habitaciones r15 = new Habitaciones(15, 3, "Cinco Estrellas", 6000);
+     Habitaciones r15 = new Habitaciones(15, 3, "Cinco Estrellas", 6000, "15");
      ListadeHabitaciones.Add(r15);
  
  }
@@ -111,13 +113,13 @@ namespace Reservaciones
      }
    
     public void cargarClientes(){
-        Clientela c1 = new Clientela(123, 180, "Gisel", "Membreño", 97789612);
+        Clientela c1 = new Clientela(123, 180, "Gisel", "Membreño", 97789612, "1");
         ListadeClientes.Add(c1);
-        Clientela c2 = new Clientela(456, 181, "Juan", "Carlos", 32562314);
+        Clientela c2 = new Clientela(456, 181, "Juan", "Carlos", 32562314, "2");
         ListadeClientes.Add(c2);
-        Clientela c3 = new Clientela(455, 182, "Acsa", "Salazar", 97781214);
+        Clientela c3 = new Clientela(455, 182, "Acsa", "Salazar", 97781214, "3");
         ListadeClientes.Add(c3);
-        Clientela c4 = new Clientela(457, 183, "Kenneth", "Flores", 33532334);
+        Clientela c4 = new Clientela(457, 183, "Kenneth", "Flores", 33532334, "4");
         ListadeClientes.Add(c4);
 
     }
@@ -137,6 +139,42 @@ namespace Reservaciones
      
      Console.ReadLine();
 
+    }
+
+    public void asignarReserva(){
+        Console.WriteLine("Creando Reserva");
+        Console.WriteLine("=============");
+        Console.WriteLine("");
+
+        
+        Console.WriteLine("Ingrese el codigo del cliente: ");
+        string codigocliente = Console.ReadLine();
+
+        Clientes cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigocliente);        
+        if (cliente == null)
+        {
+            Console.WriteLine("Cliente no encontrado");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("Cliente: " + cliente.Nombre + cliente.Apellido);
+            Console.WriteLine("");
+        }
+
+         Console.WriteLine("Ingrese el numero de habitacion: ");
+        string codigoHabitacion = Console.ReadLine();
+
+        Habitaciones habitacion = ListadeHabitaciones.Find(v => v.Numero.ToString() == codigoHabitacion);
+        if (habitacion == null) 
+        {
+            Console.WriteLine("Habitacion no encontrada");
+            Console.ReadLine();
+            return;
+        } else {
+            Console.WriteLine("Habitacion: " + habitacion.Piso + habitacion.Tipo + habitacion.Precio);
+            Console.WriteLine("");
+            Console.ReadLine();
+        }
     }
 }
 public class Restaurante
@@ -159,24 +197,24 @@ public class Restaurante
     }
 }
 
-public class Clientela : Clientes
+public class Clientela : Clientes 
 {
-    public DateTime Fecha { get; set; }
-    public Habitaciones Numero { get; set; }
-    public Habitaciones Tipo { get; set; }
+    public string CodigoCliente { get; set; }
    
-
-public Clientela(int codigo, int id, string nombre, string apellido, int telefono)
+public Clientela(int codigo, int id, string nombre, string apellido, int telefono, string codigocliente)
     {
         Codigo = codigo;
         ID = id;
         Nombre = nombre;
         Apellido = apellido;
         Telefono = telefono;
+        CodigoCliente = codigocliente;
 
     }
-    
+
 } 
+
+
     class Program
     {
         static void Main(string[] args)
@@ -208,7 +246,11 @@ public Clientela(int codigo, int id, string nombre, string apellido, int telefon
                         break;
                     case "3":
                         reserva.listarClientes();
-                        break;                          
+                        break;
+                    case "4":
+                        reserva.asignarReserva();
+                        break;                        
+                    
                     default:
                         break;
                 }
