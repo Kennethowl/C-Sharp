@@ -171,11 +171,12 @@ namespace Reservaciones
             Console.ReadLine();
             return;
         } else {
-            Console.WriteLine("Habitacion: " + " | " + habitacion.Numero + " | "  + habitacion.Piso + " | " + habitacion.Tipo + " | " + habitacion.Precio);
+            Console.WriteLine("Habitacion: " + " Numero: "  + habitacion.Numero + " | " + "Piso: " + habitacion.Piso + " | " + "Tipo: " + habitacion.Tipo + " | " + "Saldo: " + habitacion.Precio);
             Console.WriteLine("");
             Console.ReadLine();
         }
     }
+
 }
 public class Restaurante
 {
@@ -233,6 +234,7 @@ public Clientela(int codigo, int id, string nombre, string apellido, int telefon
                 Console.WriteLine("2 - Bariloche's Restaurant");
                 Console.WriteLine("3 - Lista de Clientes");
                 Console.WriteLine("4 - Crear Reserva");
+                Console.WriteLine("5 - Reservaciones Hechas");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
 
@@ -249,7 +251,9 @@ public Clientela(int codigo, int id, string nombre, string apellido, int telefon
                         break;
                     case "4":
                         reserva.asignarReserva();
-                        break;                        
+                        break;
+                    case "5":
+                        break;                         
                     
                     default:
                         break;
