@@ -143,21 +143,21 @@ namespace Reservaciones
 
     public void asignarReserva(){
         Console.WriteLine("Creando Reserva");
-        Console.WriteLine("=============");
+        Console.WriteLine("****************");
         Console.WriteLine("");
 
         
         Console.WriteLine("Ingrese el codigo del cliente: ");
         string codigocliente = Console.ReadLine();
 
-        Clientes cliente = ListadeClientes.Find(c => c.Codigo.ToString() == codigocliente);        
-        if (cliente == null)
+        Clientes clientess = ListadeClientes.Find(c => c.Codigo.ToString() == codigocliente);        
+        if (clientess == null)
         {
             Console.WriteLine("Cliente no encontrado");
             Console.ReadLine();
             return;
         } else {
-            Console.WriteLine("Cliente: " + cliente.Nombre + " | " + cliente.Apellido);
+            Console.WriteLine("Cliente: " + clientess.Nombre + " | " + clientess.Apellido);
             Console.WriteLine("");
         }
 
@@ -174,11 +174,26 @@ namespace Reservaciones
             Console.WriteLine("Habitacion: " + " Numero: "  + habitacion.Numero + " | " + "Piso: " + habitacion.Piso + " | " + "Tipo: " + habitacion.Tipo + " | " + "Saldo: " + habitacion.Precio);
             Console.WriteLine("");
             Console.ReadLine();
-        }
+        }     
     }
 
+    public void creditos(){
+     Console.Clear();
+     Console.WriteLine("        Creditos        ");
+     Console.WriteLine("************************");
+     Console.WriteLine(" Kenneth Gabriel Flores Lopez");
+     Console.WriteLine(" Lenguaje de Programacion II");
+     Console.WriteLine(" Programa de Reservaciones de Hotel");
+     Console.WriteLine(" Valor 20%");
+     Console.WriteLine(" Fecha de entrega 14/12/20");
+     Console.WriteLine("");
+     Console.ReadLine();
+
 }
-public class Restaurante
+
+}
+
+    public class Restaurante
 {
     public string Desayuno { get; set; }
     public double Saldo1 { get; set; }
@@ -234,7 +249,8 @@ public Clientela(int codigo, int id, string nombre, string apellido, int telefon
                 Console.WriteLine("2 - Bariloche's Restaurant");
                 Console.WriteLine("3 - Lista de Clientes");
                 Console.WriteLine("4 - Crear Reserva");
-                Console.WriteLine("5 - Reservaciones Hechas");
+                Console.WriteLine("5 - Reservaciones ");
+                Console.WriteLine("6 - Creditos");
                 Console.WriteLine("0 - Salir");
                 opcion = Console.ReadLine();
 
@@ -253,7 +269,10 @@ public Clientela(int codigo, int id, string nombre, string apellido, int telefon
                         reserva.asignarReserva();
                         break;
                     case "5":
-                        break;                         
+                        break; 
+                    case "6":
+                        reserva.creditos();
+                        break;                              
                     
                     default:
                         break;

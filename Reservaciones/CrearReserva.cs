@@ -13,11 +13,11 @@ public class CrearReserva
 
     public CrearReserva(int reserva, Habitaciones habitacion, Clientes clientess, DateTime fecha)
     {
-        ListadeHabitaciones = new List<Habitaciones>();
         Reserva = reserva;
         Habitacion = habitacion;
         Clientess = clientess;
         Fecha = fecha;
+        ListadeHabitaciones = new List<Habitaciones>();
     }
 
     public void agregarReserva(Habitaciones habitaciones){
