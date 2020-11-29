@@ -157,7 +157,11 @@ public class DatosdePrueba
         }
 
         Console.WriteLine("");
+        
+        Console.WriteLine("Subtotal de la orden es de: " + nuevaOrden.Subtotal);
+        Console.WriteLine("ISV 15 %: " + nuevaOrden.Impuesto);
         Console.WriteLine("Total de la orden es de: " + nuevaOrden.Total);
+        Console.WriteLine("Gracias por tu compra");
         Console.ReadLine();
     }
 
