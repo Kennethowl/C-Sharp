@@ -22,5 +22,11 @@ public class Tiranosauridos:Dinosaurios  // - Herencia
         Console.WriteLine("Peso: 9,5 toneladas ");
     }
 
+    public void Descripcion1()  // -> Abstraccion
+    {
+        Console.WriteLine("Longitud: 5 metros ");
+        Console.WriteLine("Peso: 600 Kilogramos ");
+    }
+
 
 }
