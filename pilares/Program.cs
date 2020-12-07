@@ -9,7 +9,10 @@ namespace pilares
             
             
             Console.WriteLine("DINOSAURIOS Y REPTILES MARINOS");
+            Console.WriteLine("-------------------------------");
+            Console.WriteLine("");
             Console.WriteLine("Tiranosauridos");
+            Console.WriteLine("**************");
             Console.WriteLine("");
 
             Tiranosaurio tiranosaurio = new Tiranosaurio();
@@ -47,6 +50,7 @@ namespace pilares
 
             Console.WriteLine("");
             Console.WriteLine("Allosauridos");
+            Console.WriteLine("**************");
             Console.WriteLine("");
 
             Allosaurus allosaurus = new Allosaurus();
@@ -66,6 +70,7 @@ namespace pilares
 
             Console.WriteLine("");
             Console.WriteLine("Reptiles Marinos");
+            Console.WriteLine("****************");
             Console.WriteLine("");
 
             Liopleurodon liopleurodon = new Liopleurodon(true, "Agilidad, letalidad bajo el agua"); // - Poliformismo
@@ -85,6 +90,7 @@ namespace pilares
 
             Console.WriteLine("");
             Console.WriteLine("Sauropodos");
+            Console.WriteLine("**********");
             Console.WriteLine("");
 
             Patagotitan patagotitan = new Patagotitan();
